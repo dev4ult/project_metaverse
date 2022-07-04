@@ -842,6 +842,10 @@ video {
   height: 18rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -1102,6 +1106,11 @@ video {
 .bg-orange-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
