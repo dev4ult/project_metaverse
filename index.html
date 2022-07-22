@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
       /* width */
@@ -19,11 +19,11 @@
 
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: grey;
+        background: rgb(191, 191, 191);
       }
 
       a {
-        font-family: 'Archivo';
+        font-family: 'Ubuntu';
       }
 
       .card {
@@ -89,25 +89,29 @@
       }
     </style>
   </head>
-  <body class="overflow-x-hidden font-ubuntu relative z-0 bg-slate-900">
+  <body class="overflow-x-hidden font-poppin relative z-0 bg-slate-900">
     <!-- HERO SECTION -->
-    <header class="hero-section h-screen flex overflow-x-hidden relative z-10">
-      <div class="container xl:max-w-6xl mx-auto flex relative items-center justify-between px-4">
+    <header id="hero-section" class="hero-section h-screen flex overflow-x-hidden relative z-10">
+      <div class="container xl:max-w-6xl mx-auto flex relative items-center justify-between px-4 flex-col-reverse py-4 lg:flex-row">
         <div>
           <h1 class="fade-left relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold uppercase bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">Metaverse</h1>
-          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white sm:mt-2">Beyond the universe</h2>
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white sm:mt-2 uppercase">Beyond the universe</h2>
           <hr class="fade-left w-1/4 sm:w-1/3 md:w-1/2 mt-4 sm:mt-6 md:mt-8 border-none h-0.5 bg-sky-500" />
           <div>
             <a
               href="#description"
-              class="fade-left explore-button font-medium flex w-fit text-xl sm:text-2xl md:text-3xl py-0.5 sm:py-1 md:py-1.5 px-3 sm:px-4 md:px-5 rounded-full mt-8 sm:mt-12 md:mt-14 lg:mt-20 text-white font-archivo transition ease-in-out bg-gradient-to-r from-violet-500 to-fuchsia-500 before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
-              >explore <img src="image/icon/arrow.svg" alt="arrow" class="ml-2 sm:ml-3 w-4 sm:w-5 md:w-6 mg:w-7"
+              class="fade-left explore-button font-medium flex w-fit text-xl sm:text-2xl md:text-3xl py-0.5 sm:py-1 md:py-1.5 px-3 sm:px-4 md:px-5 rounded-full mt-8 sm:mt-12 md:mt-14 lg:mt-20 text-white transition ease-in-out bg-gradient-to-r from-violet-500 to-fuchsia-500 before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+              >Let's dive in <img src="image/icon/arrow.svg" alt="arrow" class="ml-2 sm:ml-3 w-4 sm:w-5 md:w-6 mg:w-7"
             /></a>
           </div>
         </div>
-        <div class="w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 bg-teal-400 rounded-full absolute -right-36 sm:static"></div>
+        <iframe class="lg:w-1/2 h-[50vh] cursor-pointer" src="https://my.spline.design/planetringcopy-a47c622ea88debe972028fefcb10a299/" frameborder="0" width="100%" height="100%"></iframe>
       </div>
     </header>
+
+    <a href="#hero-section" class="arrow-up fixed left-[2vw] bottom-[2vw] z-30 hidden">
+      <img src="image/icon/arrow-up.svg" class="w-20" alt="" />
+    </a>
 
     <div class="absolute -top-[60vw] -right-[70vw] bg-slate-860 h-[120vw] w-screen z-0 -rotate-45 hidden lg:block"></div>
 
@@ -117,12 +121,15 @@
 
     <!-- WHAT IS METAVERSE [] DESCRIPTION -->
     <section id="description" class="description h-screen flex items-center relative">
-      <div class="container xl:max-w-6xl mx-auto flex relative px-4 justify-between">
-        <div class="h-52 w-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 bg-teal-300 rounded-full absolute -left-44 self-start sm:static"></div>
+      <div class="container xl:max-w-6xl mx-auto flex relative px-4 justify-between items-center lg:flex-row flex-col">
+        <iframe class="lg:w-1/2 h-[50vh]" src="https://my.spline.design/booleanscopy-f48aa53046b230fb8feb2d6330278241/" frameborder="0" width="100%" height="100%"></iframe>
         <div class="sm:max-w-sm md:max-w-md lg:max-w-lg">
-          <h2 class="fade-right relative text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-right bg-gradient-to-r from-teal-200 to-sky-400 bg-clip-text text-transparent font-archivo">what is metaverse</h2>
-          <p class="fade-right relative text-right text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-            The metaverse is... Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          <h2 class="fade-right relative text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-right bg-gradient-to-r from-teal-200 to-sky-400 bg-clip-text text-transparent">what is metaverse</h2>
+          <p class="fade-right relative text-right text-white mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+            The metaverse is a collection of every virtual world built using blockchain technology.
+          </p>
+          <p class="fade-right relative text-right text-white mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+            The main thing to always remember when you think about the metaverse is that it is not one place.
           </p>
           <hr class="fade-right w-1/4 sm:w-1/3 mt-4 border-none h-0.5 bg-sky-500 ml-auto" />
         </div>
@@ -215,29 +222,29 @@
     </div>
 
     <!-- THINGS IN METAVERSE -->
-    <section class="things-in-metaverse py-10 sm:h-screen relative overflow-x-hidden">
+    <section class="things-in-metaverse py-10 sm:h-screen relative overflow-hidden px-3">
       <div class="container xl:max-w-6xl m-auto px-4">
         <div>
-          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-bold uppercase text-center sm:text-left max-w-2xl font-archivo">
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-bold uppercase text-center sm:text-left max-w-2xl">
             What we need to know before jumping into the metaverse
           </h2>
           <div class="fade-right relative my-6 w-fit mx-auto sm:ml-auto sm:mr-0 transition ease-in-out">
             <ul class="flex flex-wrap gap-2 justify-center">
               <li>
                 <a
-                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-teal-400 to-sky-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full font-archivo before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-teal-400 to-sky-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
                   >AR</a
                 >
               </li>
               <li>
                 <a
-                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full font-archivo before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
                   >VR</a
                 >
               </li>
               <li>
                 <a
-                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full font-archivo before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
                   >AI</a
                 >
               </li>
@@ -245,13 +252,13 @@
             <ul class="flex flex-wrap gap-2 mt-2 justify-center sm:justify-end">
               <li>
                 <a
-                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full font-archivo before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
                   >NFT</a
                 >
               </li>
               <li>
                 <a
-                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full font-archivo before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
                   >Crypto</a
                 >
               </li>
@@ -264,65 +271,69 @@
         <div class="w-screen grow shrink-0 relative">
           <div class="container xl:max-w-6xl mx-auto relative">
             <div class="max-w-3xl">
-              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo voluptates totam maiores tempore officiis dolor corporis, at rem molestias harum quisquam error in molestiae deleniti? Facilis animi quos asperiores
-                suscipit odit, deserunt pariatur consequatur ex provident? Modi, incidunt maiores?
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Augmented reality (AR) is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information, sometimes across multiple sensory
+                modalities, including visual, auditory, haptic, somatosensory and olfactory.
               </p>
-              <p class="fade-right relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo, nobis laboriosam quisquam nihil quis non, totam numquam distinctio magnam exercitationem! Saepe rem nulla quaerat delectus eveniet nobis ipsum quam.
-              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/ar.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/ar-2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
             </div>
           </div>
         </div>
         <div class="w-screen grow shrink-0 relative">
           <div class="container xl:max-w-6xl mx-auto">
             <div class="max-w-3xl">
-              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo voluptates totam maiores tempore officiis dolor corporis, at rem molestias harum quisquam error in molestiae deleniti? Facilis animi quos asperiores
-                suscipit odit, deserunt pariatur consequatur ex provident? Modi, incidunt maiores?
+              <p class="fade-left relative text-slate-50 mt-8 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment (particularly video games), education (such as medical
+                or military training) and business (such as virtual meetings).
               </p>
-              <p class="fade-right relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo, nobis laboriosam quisquam nihil quis non, totam numquam distinctio magnam exercitationem! Saepe rem nulla quaerat delectus eveniet nobis ipsum quam.
-              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/vr.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/vr2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
             </div>
           </div>
         </div>
         <div class="w-screen grow shrink-0 relative">
           <div class="container xl:max-w-6xl mx-auto">
             <div class="max-w-3xl">
-              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo voluptates totam maiores tempore officiis dolor corporis, at rem molestias harum quisquam error in molestiae deleniti? Facilis animi quos asperiores
-                suscipit odit, deserunt pariatur consequatur ex provident? Modi, incidunt maiores?
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals including humans. AI research has been defined as the field of study of intelligent agents,
+                which refers to any system that perceives its environment and takes actions that maximize its chance of achieving its goals
               </p>
-              <p class="fade-right relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo, nobis laboriosam quisquam nihil quis non, totam numquam distinctio magnam exercitationem! Saepe rem nulla quaerat delectus eveniet nobis ipsum quam.
-              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/ai.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/ai2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
             </div>
           </div>
         </div>
         <div class="w-screen grow shrink-0 relative">
           <div class="container xl:max-w-6xl mx-auto">
             <div class="max-w-3xl">
-              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo voluptates totam maiores tempore officiis dolor corporis, at rem molestias harum quisquam error in molestiae deleniti? Facilis animi quos asperiores
-                suscipit odit, deserunt pariatur consequatur ex provident? Modi, incidunt maiores?
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                A Non-Fungible Token (NFT) is a digital asset that is verifiable on blockchain technology. Assets include artwork, music, or in-game assets such as unique avatars. Because they are unique, NFTs are becoming sought after as
+                collectibles.
               </p>
-              <p class="fade-right relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo, nobis laboriosam quisquam nihil quis non, totam numquam distinctio magnam exercitationem! Saepe rem nulla quaerat delectus eveniet nobis ipsum quam.
-              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/nft.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/nft2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
             </div>
           </div>
         </div>
         <div class="w-screen grow shrink-0 relative">
           <div class="container xl:max-w-6xl mx-auto">
             <div class="max-w-3xl">
-              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo voluptates totam maiores tempore officiis dolor corporis, at rem molestias harum quisquam error in molestiae deleniti? Facilis animi quos asperiores
-                suscipit odit, deserunt pariatur consequatur ex provident? Modi, incidunt maiores?
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Crypto is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
               </p>
-              <p class="fade-right relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium nemo, nobis laboriosam quisquam nihil quis non, totam numquam distinctio magnam exercitationem! Saepe rem nulla quaerat delectus eveniet nobis ipsum quam.
-              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/crypto.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/crypto2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
             </div>
           </div>
         </div>
@@ -350,16 +361,14 @@
     <section class="people-perspective relative z-10">
       <div class="container mx-auto xl:max-w-6xl px-4">
         <div class="first-perspective py-16">
-          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-500 bg-clip-text text-transparent font-archivo uppercase font-bold">Programmers Perspective</h2>
-          <p class="fade-left relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-500 bg-clip-text text-transparent uppercase font-bold">Programmers Perspective</h2>
+          <p class="fade-left relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
             There are some benefits for those who have knowledge in programming such as more job opportunities and new project ideas
           </p>
           <div>
             <div class="my-3">
-              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
-                if you still a learner in programming or software development, you are in the right time.
-              </p>
-              <p class="fade-left relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">It`s never too late to learn something new - quotes by idk</p>
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">if you still a learner in programming or software development, you are in the right time.</p>
+              <p class="fade-left relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">It`s never too late to learn something new</p>
             </div>
           </div>
         </div>
@@ -379,14 +388,14 @@
           <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 ml-2" />
         </div>
         <div class="second-perspective py-16">
-          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-500 font-bold bg-clip-text text-transparent font-archivo uppercase">
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-500 font-bold bg-clip-text text-transparent uppercase">
             What about for those who does not involved in Programming (not in literal Information Technology)
           </h2>
-          <p class="fade-right relative my-4 sm:my-6 md:my-8 lg:my-10 text-slate-50 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+          <p class="fade-right relative my-4 sm:my-6 md:my-8 lg:my-10 text-slate-50 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
             Jobs in metaverse don`t evolve only in programming field. Graphic Designer in 3D, 2D or anything that creates Art digitally. They can sell their arts as an NFT or create asset for metaverse project like character or building
             design with 3D modeling or something like that.
           </p>
-          <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+          <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
             Product manager will be involved in the product and strategy marketing. They have an understanding the user's point of view, gathering feedback, and focusing on appropriate opportunities.
           </p>
         </div>
@@ -415,8 +424,8 @@
     <!-- DOWNSIDE SECTION -->
     <section class="the-downside py-16 relative">
       <div class="container mx-auto xl:max-w-6xl px-4">
-        <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-bold font-archivo uppercase">The Disadvantages</h2>
-        <p class="fade-right relative my-4 sm:my-6 md:my-8 lg:my-10 text-slate-50 mt-4 font-archivo leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+        <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-bold uppercase">The Disadvantages</h2>
+        <p class="fade-right relative my-4 sm:my-6 md:my-8 lg:my-10 text-slate-50 mt-4 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
           Metaverse is not all about the new look in the digital world. It is cool but, it must have its downside. We still have a long way to go to have metaverse to become essential in daily life. There are some potential downsides to the
           metaverse.
         </p>
@@ -453,48 +462,80 @@
           <div class="fade-left relative socmed w-fit">
             <ul class="flex gap-2">
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/naga_indosayur/">
                   <img class="w-12" src="image/icon/instagram.svg" alt="instagram" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/dev4ult">
                   <img class="w-12" src="image/icon/github.svg" alt="github" />
                 </a>
               </li>
             </ul>
             <ul class="mt-2 flex gap-2">
               <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/nibras-alyassar-90526918b/">
                   <img class="w-12" src="image/icon/linkedin.svg" alt="linkedin" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://twitter.com/nibras_alyassar">
                   <img class="w-12" src="image/icon/twitter.svg" alt="twitter" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="resource mt-4 sm:mt-0">
-          <h2 class="fade-left relative text-xl sm:text-2xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Resource</h2>
-          <ul class="fade-left relative">
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">What is metaverse</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">The downside of metaverse</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">Potential jobs in metaverse</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">NFTs</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">What is cryptocurrency all about</a></li>
-          </ul>
-        </div>
         <div class="explore-more mt-4 sm:mt-0">
           <h2 class="fade-left relative text-xl sm:text-2xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Explore more</h2>
           <ul class="fade-left relative">
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">What is metaverse</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">The downside of metaverse</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">Potential jobs in metaverse</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">NFTs</a></li>
-            <li><a href="#" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">What is cryptocurrency all about</a></li>
+            <li>
+              <a
+                href="https://academy.binance.me/en/articles/what-is-the-metaverse?utm_campaign=googleadsxacademy&utm_source=googleadwords_int&utm_medium=cpc&ref=HDYAHEES&gclid=Cj0KCQjwlemWBhDUARIsAFp1rLX3SrrJQ947u1aEZ24RF9EIJt0uY6S3xAwxcnpUykRmZigY4zDhtgQaArc1EALw_wcB"
+                class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500"
+                >What is metaverse</a
+              >
+            </li>
+            <li><a href="https://bernardmarr.com/7-important-problems-disadvantages-of-the-metaverse/" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">The downside of metaverse</a></li>
+            <li><a href="https://www.itcareerfinder.com/brain-food/blog/entry/great-jobs-in-the-metaverse.html" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">Potential jobs in metaverse</a></li>
+            <li><a href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">NFTs</a></li>
+            <li><a href="https://www.investopedia.com/terms/c/cryptocurrency.asp" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">What is cryptocurrency all about</a></li>
+          </ul>
+        </div>
+        <div class="image-resource mt-4 sm:mt-0">
+          <h2 class="fade-left relative text-xl sm:text-2xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Image Source</h2>
+          <ul class="fade-left relative">
+            <li class="text-slate-400"><a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@uniboa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">UNIBOA</a></li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@mynameisyanick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">My name is Yanick</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@julientromeur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">julien Tromeur</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/es/@sorkin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">stephan sorkin</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@possessedphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Possessed Photography</a>
+            </li>
+          </ul>
+        </div>
+        <div class="image-resource mt-4 sm:mt-0">
+          <h2 class="fade-left relative text-xl sm:text-2xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Image Source</h2>
+          <ul class="fade-left relative">
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@askkell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Kelly</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@arthurbizkit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arthur Mazi</a>
+            </li>
+
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@kanchanara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kanchanara</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@quantitatives?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Quantitatives</a>
+            </li>
           </ul>
         </div>
       </div>
