@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -558,3 +559,565 @@
     <script type="text/javascript" src="js/moveOnClick.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metaverse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(191, 191, 191);
+      }
+
+      a {
+        font-family: 'Ubuntu';
+      }
+
+      .card {
+        transform-style: preserve-3d;
+      }
+
+      @media (min-width: 1024px) {
+        .caption,
+        .icon {
+          transform: translate3d(0, 0, 50px);
+          position: absolute;
+        }
+
+        .caption {
+          bottom: -5px;
+          opacity: 0;
+          transition: 300ms all ease;
+        }
+
+        .card:hover .caption {
+          bottom: 35px;
+          opacity: 1;
+        }
+
+        .icon {
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 50px);
+          transition: 300ms all ease;
+        }
+
+        .card:hover .icon {
+          transform: translate3d(-50%, -70%, 50px);
+        }
+      }
+
+      .fade-left,
+      .fade-right {
+        opacity: 0;
+        transition: 500ms all ease;
+      }
+
+      .fade-left {
+        left: -3vw;
+      }
+
+      .fade-right {
+        right: -3vw;
+      }
+
+      .fade-left.appear,
+      .fade-right.appear {
+        transition: 500ms all ease;
+        opacity: 1;
+      }
+
+      .fade-left.appear {
+        left: 0;
+      }
+
+      .fade-right.appear {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden font-poppin relative z-0 bg-slate-900">
+    <!-- HERO SECTION -->
+    <header id="hero-section" class="hero-section h-screen flex overflow-x-hidden relative z-10">
+      <div class="container xl:max-w-6xl mx-auto flex relative items-center justify-between px-4 flex-col-reverse py-4 lg:flex-row">
+        <div>
+          <h1 class="fade-left relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold uppercase bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text">Metaverse</h1>
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white sm:mt-2 uppercase">Beyond the universe</h2>
+          <hr class="fade-left w-1/4 sm:w-1/3 md:w-1/2 mt-4 sm:mt-6 md:mt-8 border-none h-0.5 bg-sky-500" />
+          <div>
+            <a
+              href="#description"
+              class="fade-left explore-button font-medium flex w-fit text-xl sm:text-2xl md:text-3xl py-0.5 sm:py-1 md:py-1.5 px-3 sm:px-4 md:px-5 rounded-full mt-8 sm:mt-12 md:mt-14 lg:mt-20 text-white transition ease-in-out bg-gradient-to-r from-violet-500 to-fuchsia-500 before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+              >Let's dive in <img src="image/icon/arrow.svg" alt="arrow" class="ml-2 sm:ml-3 w-4 sm:w-5 md:w-6 mg:w-7"
+            /></a>
+          </div>
+        </div>
+        <iframe class="lg:w-1/2 h-[70vh] cursor-pointer" src="https://my.spline.design/planetringcopy-a47c622ea88debe972028fefcb10a299/" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+    </header>
+
+    <a href="#hero-section" class="arrow-up fixed left-[2vw] bottom-[2vw] z-30 hidden">
+      <img src="image/icon/arrow-up.svg" class="w-20" alt="" />
+    </a>
+
+    <div class="absolute -top-[60vw] -right-[70vw] bg-slate-860 h-[120vw] w-screen z-0 -rotate-45 hidden lg:block"></div>
+
+    <div class="relative hidden lg:block">
+      <div class="absolute -top-[60vw] bg-slate-860 h-[120vw] w-screen -left-[90vw] z-0 -rotate-45"></div>
+    </div>
+
+    <!-- WHAT IS METAVERSE [] DESCRIPTION -->
+    <section id="description" class="description h-screen flex items-center relative">
+      <div class="container xl:max-w-6xl mx-auto flex relative px-4 justify-between items-center lg:flex-row flex-col">
+        <iframe class="lg:w-1/2 h-[70vh]" src="https://my.spline.design/booleanscopy-f48aa53046b230fb8feb2d6330278241/" frameborder="0" width="100%" height="100%"></iframe>
+        <div class="sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <h2 class="fade-right relative text-2xl sm:text-3xl md:text-4xl font-bold uppercase text-right bg-gradient-to-r from-teal-200 to-sky-400 bg-clip-text text-transparent">what is metaverse</h2>
+          <p class="fade-right relative text-right text-white mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+            The metaverse is a collection of every virtual world built using blockchain technology.
+          </p>
+          <p class="fade-right relative text-right text-white mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+            The main thing to always remember when you think about the metaverse is that it is not one place.
+          </p>
+          <hr class="fade-right w-1/4 sm:w-1/3 mt-4 border-none h-0.5 bg-sky-500 ml-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery relative z-10 sm:h-screen mx-auto sm:grid grid-cols-4">
+      <span class="relative uppercase text-white text-4xl sm:text-6xl lg:text-8xl flex m-auto col-span-2 font-medium italic justify-center">What Are</span>
+      <span class="relative uppercase text-white text-4xl sm:text-7xl md:text-8xl lg:text-9xl flex m-auto font-medium italic justify-center">in</span>
+      <span class="relative uppercase text-white text-4xl lg:text-6xl row-start-5 col-start-2 col-span-2 flex m-auto pb-10 sm:pb-0 font-medium italic justify-center">the Metaverse</span>
+      <div
+        class="py-12 flex row-start-1 col-span-2 sm:w-[95%] before:bg-sky-500 before:content-['VISUALIZATION'] before:top-0 before:bottom-0 lg:before:-right-full before:right-0 before:left-0 lg:before:left-full hover:before:right-0 hover:before:left-0 before:absolute relative before:transition-all before:duration-300 before:bg-cover before:bg-no-repeat overflow-hidden before:z-10 before:flex before:justify-center before:items-center before:text-slate-700 before:font-semibold before:text-4xl"
+      >
+        <div
+          class="h-full w-full absolute top-0"
+          style="background-color: rgb(14 165 233); opacity: 0.8; background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgb(14 165 233) 10px), repeating-linear-gradient(#444cf755, rgb(51 65 85))"
+        ></div>
+      </div>
+      <div
+        class="py-12 row-start-1 col-start-3 col-span-2 row-span-2 before:bg-yellow-300 h-[90%] before:content-['ENTERTAINMENT'] lg:before:-bottom-full before:top-0 before:bottom-0 before:0 lg: before:right-0 before:left-0 lg:before:top-full hover:before:top-0 hover:before:bottom-0 before:absolute relative before:transition-all before:duration-300 overflow-hidden before:z-10 before:flex before:justify-center before:items-center before:text-slate-700 before:font-semibold before:text-4xl"
+      >
+        <div
+          class="h-full w-full absolute top-0"
+          style="
+            background: repeating-linear-gradient(
+              45deg,
+              #f4b41a,
+              #f4b41a 10px,
+
+              #143d59 10px,
+              #143d59 20px /* Change the size */
+            );
+          "
+        ></div>
+      </div>
+      <div
+        class="py-12 flex col-start-1 row-start-3 row-span-2 before:bg-red-500 before:content-['LEARNING'] before:top-0 lg:before:-top-full before:right-0 before:left-0 before:bottom-0 lg:before:bottom-full hover:before:top-0 hover:before:bottom-0 before:absolute relative before:transition-all before:duration-300 overflow-hidden before:z-10 before:flex before:justify-center before:items-center before:text-white before:font-semibold before:text-4xl"
+      >
+        <div
+          class="h-full w-full absolute top-0"
+          style="
+            background-color: white;
+            opacity: 0.8;
+            background-image: linear-gradient(135deg, rgb(239 68 68) 25%, transparent 25%), linear-gradient(225deg, rgb(239 68 68) 25%, transparent 25%), linear-gradient(45deg, rgb(239 68 68) 25%, transparent 25%),
+              linear-gradient(315deg, rgb(239 68 68) 25%, white 25%);
+            background-position: 10px 0, 10px 0, 0 0, 0 0;
+            background-size: 20px 20px;
+            background-repeat: repeat;
+          "
+        ></div>
+      </div>
+      <div
+        class="py-12 col-start-2 row-start-3 col-span-2 row-span-2 lg:w-[95%] before:content-['GAMES'] before:bg-teal-400 before:top-0 before:bottom-0 before:right-0 lg:before:-left-full before:left-0 lg:before:right-full hover:before:right-0 hover:before:left-0 before:absolute relative before:transition-all before:duration-300 overflow-hidden before:z-10 before:flex before:justify-center before:items-center before:text-slate-800 before:font-semibold before:text-4xl"
+      >
+        <div
+          class="h-full w-full absolute top-0"
+          style="background-color: rgb(30 41 59); opacity: 0.8; background-image: linear-gradient(to right, rgb(45 212 191), rgb(45 212 191) 5px, rgb(30 41 59) 5px, rgb(30 41 59)); background-size: 10px 100%"
+        ></div>
+      </div>
+      <div
+        class="py-12 flex col-start-1 row-start-6 col-span-2 before:bg-sky-500 before:content-['CRYPTO_CURRENCY'] before:top-0 lg:before:-top-full before:right-0 before:left-0 before:bottom-0 lg:before:bottom-full hover:before:top-0 hover:before:bottom-0 before:absolute relative before:transition-all before:duration-300 overflow-hidden before:z-10 before:flex before:justify-center before:items-center before:text-slate-700 before:font-semibold before:text-4xl before:text-center"
+      >
+        <div
+          class="h-full w-full absolute top-0"
+          style="background-color: rgb(14 165 233); opacity: 0.8; background-image: linear-gradient(rgb(51 65 85) 1px, transparent 1px), linear-gradient(to right, rgb(51 65 85) 1px, rgb(14 165 233) 1px); background-size: 20px 20px"
+        ></div>
+      </div>
+      <div
+        class="py-12 flex row-start-6 col-span-2 before:bg-red-500 before:content-['WORKING'] before:top-0 lg:before:-bottom-full before:right-0 before:left-0 before:bottom-0 lg:before:top-full hover:before:top-0 hover:before:bottom-0 before:absolute relative before:transition-all before:duration-300 overflow-hidden before:z-10 before:flex before:justify-center before:items-center before:text-white before:font-semibold before:text-4xl"
+      >
+        <div
+          class="h-full w-full absolute top-0"
+          style="
+            background-color: rgb(239 68 68);
+            opacity: 0.8;
+            background: radial-gradient(circle, transparent 20%, rgb(239 68 68) 20%, rgb(239 68 68) 80%, transparent 80%, transparent),
+              radial-gradient(circle, transparent 20%, rgb(239 68 68) 20%, rgb(239 68 68) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(white 2px, transparent 2px) 0 -1px,
+              linear-gradient(90deg, white 2px, rgb(239 68 68) 2px) -1px 0;
+            background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+          "
+        ></div>
+      </div>
+      <div class="py-4 bg-sky-400 row-span-2 hidden sm:block"></div>
+      <div class="py-4 bg-yellow-300 row-start-5 h-[85%] w-[90%] mt-auto hidden sm:block"></div>
+    </section>
+
+    <div class="relative hidden lg:block">
+      <div class="absolute top-0 bg-slate-860 h-[130vh] w-[60vw] -right-[30vw] z-0"></div>
+    </div>
+
+    <!-- THINGS IN METAVERSE -->
+    <section class="things-in-metaverse py-10 sm:h-screen relative overflow-hidden px-3">
+      <div class="container xl:max-w-6xl m-auto px-4">
+        <div>
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-bold uppercase text-center sm:text-left max-w-2xl">
+            What we need to know before jumping into the metaverse
+          </h2>
+          <div class="fade-right relative my-6 w-fit mx-auto sm:ml-auto sm:mr-0 transition ease-in-out">
+            <ul class="flex flex-wrap gap-2 justify-center">
+              <li>
+                <a
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-teal-400 to-sky-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  >AR</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  >VR</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  >AI</a
+                >
+              </li>
+            </ul>
+            <ul class="flex flex-wrap gap-2 mt-2 justify-center sm:justify-end">
+              <li>
+                <a
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  >NFT</a
+                >
+              </li>
+              <li>
+                <a
+                  class="cursor-pointer slide-button inline-block bg-gradient-to-r from-violet-500 to-fuchsia-500 text-slate-50 sm:text-lg md:text-xl sm:px-4 font-medium py-0.5 px-2 rounded-full before:content-[''] before:bg-gradient-to-r before:from-teal-400 before:to-sky-500 before:top-0 before:bottom-0 before:right-full before:left-0 hover:before:right-0 relative before:absolute before:rounded-full before:-z-10 z-10 before:transition-all before:duration-500 overflow-hidden"
+                  >Crypto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="w-screen overflow-x-hidden"></div>
+      <div class="slider w-[500vw] flex transition-all">
+        <div class="w-screen grow shrink-0 relative">
+          <div class="container xl:max-w-6xl mx-auto relative">
+            <div class="max-w-3xl">
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Augmented reality (AR) is an interactive experience of a real-world environment where the objects that reside in the real world are enhanced by computer-generated perceptual information, sometimes across multiple sensory
+                modalities, including visual, auditory, haptic, somatosensory and olfactory.
+              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/ar.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/ar-2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-screen grow shrink-0 relative">
+          <div class="container xl:max-w-6xl mx-auto">
+            <div class="max-w-3xl">
+              <p class="fade-left relative text-slate-50 mt-8 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Virtual reality (VR) is a simulated experience that can be similar to or completely different from the real world. Applications of virtual reality include entertainment (particularly video games), education (such as medical
+                or military training) and business (such as virtual meetings).
+              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/vr.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/vr2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-screen grow shrink-0 relative">
+          <div class="container xl:max-w-6xl mx-auto">
+            <div class="max-w-3xl">
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals including humans. AI research has been defined as the field of study of intelligent agents,
+                which refers to any system that perceives its environment and takes actions that maximize its chance of achieving its goals
+              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/ai.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/ai2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-screen grow shrink-0 relative">
+          <div class="container xl:max-w-6xl mx-auto">
+            <div class="max-w-3xl">
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                A Non-Fungible Token (NFT) is a digital asset that is verifiable on blockchain technology. Assets include artwork, music, or in-game assets such as unique avatars. Because they are unique, NFTs are becoming sought after as
+                collectibles.
+              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/nft.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/nft2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-screen grow shrink-0 relative">
+          <div class="container xl:max-w-6xl mx-auto">
+            <div class="max-w-3xl">
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+                Crypto is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.
+              </p>
+              <div class="mt-6 flex flex-col justify-center lg:flex-row">
+                <img src="image/picture/crypto.jpg" alt="augmented reality" class="w-[85%] lg:w-[50%] h-56 object-cover mr-8" />
+                <img src="image/picture/crypto2.jpg" alt="" class="w-[85%] lg:w-[50%] h-56 object-cover mt-8 lg:mt-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONSCROLL -->
+    <div class="on-scroll h-32 bg-slate-800 relative z-10 flex items-center">
+      <div class="on-scroll-div-1 hidden lg:block w-[45vw] bg-slate-700 left-64 -skew-x-[45deg] h-full absolute top-0 z-10"></div>
+      <div class="on-scroll-div-2 hidden lg:block w-[45vw] bg-slate-600 left-24 -skew-x-[45deg] h-full absolute top-0 z-20"></div>
+      <div class="on-scroll-div-3 hidden lg:block w-[45vw] bg-slate-500 -left-16 -skew-x-[45deg] h-full absolute top-0 z-30"></div>
+
+      <h2 class="text-3xl md:text-5xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold tracking-wide z-index-0 text-center italic">METAVERSE IS COOL</h2>
+
+      <div class="on-scroll-div-4 hidden lg:block w-[45vw] bg-slate-700 right-64 -skew-x-[45deg] h-full absolute top-0"></div>
+      <div class="on-scroll-div-5 hidden lg:block w-[45vw] bg-slate-600 right-24 -skew-x-[45deg] h-full absolute top-0"></div>
+      <div class="on-scroll-div-6 hidden lg:block w-[45vw] bg-slate-500 -right-16 -skew-x-[45deg] h-full absolute top-0"></div>
+    </div>
+
+    <div class="relative hidden lg:block">
+      <div class="absolute -top-40 bg-slate-860 h-screen w-[55vw] -left-[40vw] z-0"></div>
+    </div>
+
+    <!-- PEOPLE PERSPECTIVE -->
+    <section class="people-perspective relative z-10">
+      <div class="container mx-auto xl:max-w-6xl px-4">
+        <div class="first-perspective py-16">
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-500 bg-clip-text text-transparent uppercase font-bold">Programmers Perspective</h2>
+          <p class="fade-left relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+            There are some benefits for those who have knowledge in programming such as more job opportunities and new project ideas
+          </p>
+          <div>
+            <div class="my-3">
+              <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">if you still a learner in programming or software development, you are in the right time.</p>
+              <p class="fade-left relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 text-slate-50 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">It`s never too late to learn something new</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 mr-2" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 mx-2" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 mx-2" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 ml-2" />
+        </div>
+        <div class="second-perspective py-16">
+          <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-500 font-bold bg-clip-text text-transparent uppercase">
+            What about for those who does not involved in Programming (not in literal Information Technology)
+          </h2>
+          <p class="fade-right relative my-4 sm:my-6 md:my-8 lg:my-10 text-slate-50 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+            Jobs in metaverse don`t evolve only in programming field. Graphic Designer in 3D, 2D or anything that creates Art digitally. They can sell their arts as an NFT or create asset for metaverse project like character or building
+            design with 3D modeling or something like that.
+          </p>
+          <p class="fade-left relative text-slate-50 mt-4 sm:mt-6 md:mt-8 lg:mt-10 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+            Product manager will be involved in the product and strategy marketing. They have an understanding the user's point of view, gathering feedback, and focusing on appropriate opportunities.
+          </p>
+        </div>
+        <div class="flex">
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 mr-2" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 mx-2" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 mx-2" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0" />
+          <hr class="border-0 border-b-2 bg-none border-sky-500 grow shrink-0 ml-2" />
+        </div>
+      </div>
+    </section>
+
+    <div class="relative hidden lg:block">
+      <div class="absolute top-36 bg-slate-860 h-screen w-[250vh] -left-[10vw] -rotate-[5deg] z-0"></div>
+    </div>
+
+    <!-- DOWNSIDE SECTION -->
+    <section class="the-downside py-16 relative">
+      <div class="container mx-auto xl:max-w-6xl px-4">
+        <h2 class="fade-left relative text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-bold uppercase">The Disadvantages</h2>
+        <p class="fade-right relative my-4 sm:my-6 md:my-8 lg:my-10 text-slate-50 mt-4 leading-6 tracking-wide sm:text-lg md:text-xl lg:text-2xl">
+          Metaverse is not all about the new look in the digital world. It is cool but, it must have its downside. We still have a long way to go to have metaverse to become essential in daily life. There are some potential downsides to the
+          metaverse.
+        </p>
+        <div class="card-container flex flex-wrap gap-4 justify-center">
+          <div class="fade-right relative card bg-red-500 w-60 md:w-[17rem] h-72 sm:h-80 rounded-2xl flex items-center justify-center flex-col">
+            <img src="image/icon/privacy.svg" alt="icon" class="icon w-40" />
+            <span class="caption text-4xl font-bold text-white text-center">PRIVACY ISSUES</span>
+          </div>
+          <div class="fade-left relative card bg-yellow-400 w-60 md:w-[17rem] h-72 sm:h-80 rounded-2xl flex items-center justify-center flex-col">
+            <img src="image/icon/health.svg" alt="icon" class="icon w-40" />
+            <span class="caption text-4xl font-bold text-center">HEALTH CONCERNS</span>
+          </div>
+          <div class="fade-right relative card bg-orange-400 w-60 md:w-[17rem] h-72 sm:h-80 rounded-2xl flex items-center justify-center flex-col">
+            <img src="image/icon/law.svg" alt="icon" class="icon w-40" />
+            <span class="caption text-4xl font-bold text-center text-slate-800">METAVERSE LAWS</span>
+          </div>
+          <div class="fade-left relative card bg-orange-400 w-60 md:w-[17rem] h-72 sm:h-80 rounded-2xl flex items-center justify-center flex-col">
+            <img src="image/icon/inequality.svg" alt="icon" class="icon w-40" />
+            <span class="caption text-4xl font-bold text-slate-800 text-center">ACCESS INEQUALITY</span>
+          </div>
+          <div class="fade-right relative card bg-red-500 w-60 md:w-[17rem] h-72 sm:h-80 rounded-2xl flex items-center justify-center flex-col">
+            <img src="image/icon/identity-card.svg" alt="icon" class="icon w-40" />
+            <span class="caption text-4xl font-bold text-white text-center">IDENTITY HACKING</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="py-10 bg-slate-900">
+      <div class="container px-4 mx-auto xl:max-w-6xl sm:flex sm:justify-between">
+        <div class="connect-with-me">
+          <h2 class="fade-left relative text-xl sm:text-2xl mb-2 bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Connect with me</h2>
+          <div class="fade-left relative socmed w-fit">
+            <ul class="flex gap-2">
+              <li>
+                <a href="https://www.instagram.com/naga_indosayur/">
+                  <img class="w-12" src="image/icon/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/dev4ult">
+                  <img class="w-12" src="image/icon/github.svg" alt="github" />
+                </a>
+              </li>
+            </ul>
+            <ul class="mt-2 flex gap-2">
+              <li>
+                <a href="https://www.linkedin.com/in/nibras-alyassar-90526918b/">
+                  <img class="w-12" src="image/icon/linkedin.svg" alt="linkedin" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/nibras_alyassar">
+                  <img class="w-12" src="image/icon/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="explore-more mt-4 sm:mt-0">
+          <h2 class="fade-left relative text-xl sm:text-2xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Explore more</h2>
+          <ul class="fade-left relative">
+            <li>
+              <a
+                href="https://academy.binance.me/en/articles/what-is-the-metaverse?utm_campaign=googleadsxacademy&utm_source=googleadwords_int&utm_medium=cpc&ref=HDYAHEES&gclid=Cj0KCQjwlemWBhDUARIsAFp1rLX3SrrJQ947u1aEZ24RF9EIJt0uY6S3xAwxcnpUykRmZigY4zDhtgQaArc1EALw_wcB"
+                class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500"
+                >What is metaverse</a
+              >
+            </li>
+            <li><a href="https://bernardmarr.com/7-important-problems-disadvantages-of-the-metaverse/" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">The downside of metaverse</a></li>
+            <li><a href="https://www.itcareerfinder.com/brain-food/blog/entry/great-jobs-in-the-metaverse.html" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">Potential jobs in metaverse</a></li>
+            <li><a href="https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">NFTs</a></li>
+            <li><a href="https://www.investopedia.com/terms/c/cryptocurrency.asp" class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500">What is cryptocurrency all about</a></li>
+          </ul>
+        </div>
+        <div class="image-resource mt-4 sm:mt-0">
+          <h2 class="fade-left relative text-xl sm:text-2xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Image Source</h2>
+          <ul class="fade-left relative">
+            <li class="text-slate-400"><a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@uniboa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">UNIBOA</a></li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@mynameisyanick?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">My name is Yanick</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@julientromeur?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">julien Tromeur</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/es/@sorkin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">stephan sorkin</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@possessedphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Possessed Photography</a>
+            </li>
+          </ul>
+        </div>
+        <div class="image-resource mt-4 sm:mt-0">
+          <h2 class="fade-left relative text-xl sm:text-2xl bg-gradient-to-r from-teal-300 to-sky-400 bg-clip-text text-transparent font-medium">Image Source</h2>
+          <ul class="fade-left relative">
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@askkell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Kelly</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@arthurbizkit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Arthur Mazi</a>
+            </li>
+
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@kanchanara?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kanchanara</a>
+            </li>
+            <li class="text-slate-400">
+              <a class="text-sm sm:text-base md:text-lg text-slate-300 hover:text-slate-500" href="https://unsplash.com/@quantitatives?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Quantitatives</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll('.card'), {
+        max: 25,
+        speed: 400,
+      });
+
+      VanillaTilt.init(document.querySelector('.socmed'), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+    <script type="text/javascript" src="js/intersectionObserver.js"></script>
+    <script type="text/javascript" src="js/moveOnScroll.js"></script>
+    <script type="text/javascript" src="js/moveOnClick.js"></script>
+  </body>
+</html>
+>>>>>>> 5fe77480ae6965c74e2f1b11d75056a7a859c65e

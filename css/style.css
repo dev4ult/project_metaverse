@@ -862,10 +862,13 @@ video {
   height: 18rem;
 }
 
+<<<<<<< HEAD
 .h-\[50vh\] {
   height: 50vh;
 }
 
+=======
+>>>>>>> 5fe77480ae6965c74e2f1b11d75056a7a859c65e
 .w-1\/4 {
   width: 25%;
 }
@@ -1804,10 +1807,13 @@ video {
     display: block;
   }
 
+<<<<<<< HEAD
   .lg\:h-\[70vh\] {
     height: 70vh;
   }
 
+=======
+>>>>>>> 5fe77480ae6965c74e2f1b11d75056a7a859c65e
   .lg\:w-1\/2 {
     width: 50%;
   }
