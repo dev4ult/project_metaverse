@@ -826,8 +826,8 @@ video {
   height: 0px;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
+.h-\[70vh\] {
+  height: 70vh;
 }
 
 .h-\[120vw\] {
@@ -862,8 +862,8 @@ video {
   height: 18rem;
 }
 
-.h-\[70vh\] {
-  height: 70vh;
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .w-1\/4 {
@@ -1802,6 +1802,10 @@ video {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:h-\[70vh\] {
+    height: 70vh;
   }
 
   .lg\:w-1\/2 {
